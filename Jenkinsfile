@@ -6,10 +6,10 @@ pipeline {
       steps {
         sh '''
           echo Hello from First Stage
-          ls
           echo Bye from First Stage
         '''
         print "Hello from Groovy"
+        info "Hello from Info Groovy"
       }
     }
 
