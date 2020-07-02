@@ -9,6 +9,7 @@ pipeline {
           ls
           echo Bye from First Stage
         '''
+        print "Hello from Groovy"
       }
     }
 
