@@ -1,5 +1,6 @@
 def PROJECT_NAME = 'roboshop'
 def CIJOBS = 'CIJOBS'
+def GIT_PREFIX = 'https://DevOps-Batches@dev.azure.com/DevOps-Batches/DevOps48/_git'
 
 folder(PROJECT_NAME) {
   displayName(PROJECT_NAME)
@@ -19,7 +20,7 @@ pipelineJob(PROJECT_NAME+'/'+CIJOBS+"/sample") {
       scm {
         git {
           remote {
-            url("https://DevOps-Batches@dev.azure.com/DevOps-Batches/DevOps48/_git/jenkins-seed-jobs")
+            url(GIT_PREFIX+"/jenkins-seed-jobs")
           }
           branch("*/master")
         }
