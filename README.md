@@ -1,5 +1,7 @@
 # Template for Pipeline JOb
 
+INIT SCRIPTS: https://github.com/linuxautomations/jenkins-docker-groovy
+
 ```
 pipelineJob("Terraform/RabbitMQ") {
   description('Terraform RabbitMQ Job')
