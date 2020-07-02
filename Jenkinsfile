@@ -1,10 +1,11 @@
 pipeline {
   agent any
-  stages {
 
-    environment {
-      URL = "google.com"
-    }
+  environment {
+    URL = "google.com"
+  }
+
+  stages {
 
     stage('My First Stage') {
       steps {
