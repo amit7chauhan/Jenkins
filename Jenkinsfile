@@ -1,6 +1,6 @@
 pipeline {
   agent any
-  statges {
+  stages {
 
     stage('My First Stage') {
       steps {
