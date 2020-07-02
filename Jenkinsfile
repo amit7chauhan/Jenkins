@@ -21,5 +21,11 @@ pipeline {
       }
     }
 
+    stage('My Second Stage') {
+      steps {
+        print "URL = " URL2
+      }
+    }
+
   }
 }
