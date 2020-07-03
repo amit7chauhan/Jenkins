@@ -40,6 +40,18 @@ pipeline {
       }
     }
 
+    stage('Conditional Stage') {
+      when {
+        expression {
+          return TOGGLE
+        }
+      }
+
+      steps {
+        print 'Conditional Stage'
+      }
+    }
+
     stage('My Second Stage') {
       steps {
         // print "URL = " + URL2 // This will fail as the variable is local in another stage.
