@@ -37,6 +37,7 @@ pipeline {
       steps {
         // print "URL = " + URL2 // This will fail as the variable is local in another stage.
         print 'Second Stage'
+        print 'Person Name - ' + PERSON
       }
     }
 
