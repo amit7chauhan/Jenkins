@@ -63,3 +63,71 @@ pipelineJob(PROJECT_NAME+'/'+CIJOBS+"/user") {
     }
   }
 }
+
+pipelineJob(PROJECT_NAME+'/'+CIJOBS+"/shipping") {
+  description('shipping')
+  definition {
+    cpsScm {
+      scm {
+        git {
+          remote {
+            url(GIT_PREFIX+"/rs-shipping")
+          }
+          branch("*/master")
+        }
+      }
+      scriptPath("Jenkinsfile")
+    }
+  }
+}
+
+pipelineJob(PROJECT_NAME+'/'+CIJOBS+"/payment") {
+  description('payment')
+  definition {
+    cpsScm {
+      scm {
+        git {
+          remote {
+            url(GIT_PREFIX+"/rs-payment")
+          }
+          branch("*/master")
+        }
+      }
+      scriptPath("Jenkinsfile")
+    }
+  }
+}
+
+pipelineJob(PROJECT_NAME+'/'+CIJOBS+"/ratings") {
+  description('ratings')
+  definition {
+    cpsScm {
+      scm {
+        git {
+          remote {
+            url(GIT_PREFIX+"/rs-ratings")
+          }
+          branch("*/master")
+        }
+      }
+      scriptPath("Jenkinsfile")
+    }
+  }
+}
+
+pipelineJob(PROJECT_NAME+'/'+CIJOBS+"/dispatch") {
+  description('dispatch')
+  definition {
+    cpsScm {
+      scm {
+        git {
+          remote {
+            url(GIT_PREFIX+"/rs-dispatch")
+          }
+          branch("*/master")
+        }
+      }
+      scriptPath("Jenkinsfile")
+    }
+  }
+}
