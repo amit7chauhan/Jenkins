@@ -20,7 +20,7 @@ pipeline {
   }
 
   tools {
-    terraform 'terraform-0.12.28'
+    terraform 'terraform-0.11.14'
   }
 
 
