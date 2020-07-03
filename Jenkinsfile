@@ -43,7 +43,7 @@ pipeline {
     stage('Conditional Stage') {
       when {
         expression {
-          return TOGGLE
+          return params.TOGGLE
         }
       }
 
