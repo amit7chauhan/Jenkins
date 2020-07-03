@@ -45,10 +45,7 @@ pipeline {
         // print "URL = " + URL2 // This will fail as the variable is local in another stage.
         print 'Second Stage'
         print 'Person Name - ' + PERSON
-        input message "Should we continue?", ok "Yes, we should.", submitter "alice,bob",
-        parameters {
-          string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
-        }
+        input message: 'Should we continue?', ok: 'Yes, we should.', parameters: [password(defaultValue: '', description: '', name: 'PIN')], submitter: 'admin'
       }
     }
 
