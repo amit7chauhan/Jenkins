@@ -23,3 +23,14 @@ pipelineJob("Terraform/RabbitMQ") {
 ```
 
 #
+
+## Lint URLS
+
+```text
+https://www.pylint.org/#install
+https://www.npmjs.com/package/jslint
+https://maven.apache.org/plugins/maven-checkstyle-plugin/
+https://github.com/golang/lint
+https://github.com/overtrue/phplint
+
+```
