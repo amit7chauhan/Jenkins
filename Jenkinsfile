@@ -117,7 +117,7 @@
 
 
 @Library('roboshop') _
-sample1.echo
+sample1.echo()
 
 //pipeline {
 //  agent any
