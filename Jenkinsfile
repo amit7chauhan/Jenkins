@@ -117,15 +117,17 @@
 
 
 @Library('roboshop') _
-pipeline {
-  agent any
-  stages {
-    stage('Sample') {
-      steps {
-        script {
-          sample()
-        }
-      }
-    }
-  }
-}
+sample.info 'Starting'
+sample.warning 'Nothing to do!'
+//pipeline {
+//  agent any
+//  stages {
+//    stage('Sample') {
+//      steps {
+//        script {
+//          sample()
+//        }
+//      }
+//    }
+//  }
+//}
