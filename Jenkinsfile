@@ -117,7 +117,7 @@
 
 
 @Library('roboshop') _
-sample
+sample1
 
 //pipeline {
 //  agent any
@@ -125,7 +125,7 @@ sample
 //    stage('Sample') {
 //      steps {
 //        script {
-//          sample()
+//          sample1()
 //        }
 //      }
 //    }
