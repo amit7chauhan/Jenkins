@@ -117,8 +117,8 @@
 
 
 @Library('roboshop') _
-sample.info 'Starting'
-sample.warning 'Nothing to do!'
+sample
+
 //pipeline {
 //  agent any
 //  stages {
