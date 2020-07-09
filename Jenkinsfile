@@ -117,17 +117,17 @@
 
 
 @Library('roboshop') _
-sample1.echo()
 
-//pipeline {
-//  agent any
-//  stages {
-//    stage('Sample') {
-//      steps {
-//        script {
-//          sample1()
-//        }
-//      }
-//    }
-//  }
-//}
+
+pipeline {
+  agent any
+  stages {
+    stage('Sample') {
+      steps {
+        script {
+          sample1.echo()
+        }
+      }
+    }
+  }
+}
