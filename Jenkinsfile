@@ -119,15 +119,4 @@
 @Library('roboshop') _
 
 
-pipeline {
-  agent any
-  stages {
-    stage('Sample') {
-      steps {
-        script {
-          sample1.echo()
-        }
-      }
-    }
-  }
-}
+
