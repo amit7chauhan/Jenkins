@@ -4,9 +4,10 @@ pipeline {
                 URL1 = "google.com"
             }
     stages {
-        environment {
-                URL2 = "yahoo.com"
+
          stage('My First Stage'){
+            environment {
+                            URL2 = "yahoo.com"
              steps {
                 sh '''
                  echo Hello from First Stage
