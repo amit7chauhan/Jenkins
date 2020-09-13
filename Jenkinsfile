@@ -18,11 +18,7 @@ pipeline {
                 print "Hello from groovy"
                 print "URL = " + URL1 +URL2
         }
-          stage('My Second Stage'){
-                                                    }
-              steps {
-                 print "URL = " +URL2
-               }
-    }      }
+
+    }
 
 }
