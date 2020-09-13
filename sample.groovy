@@ -1,5 +1,6 @@
 def PROJECT_NAME = 'roboshop'
 def CIJOBS = 'CIJOBS'
+def GIT_PREFIX = 'https://github.com/amit7chauhan'
 
 folder(PROJECT_NAME) {
     displayName(PROJECT_NAME)
@@ -18,7 +19,7 @@ pipelineJob(PROJECT_NAME +'/'+ CIJOBS + "/sample") {
             scm {
                 git {
                     remote {
-                        url("https://github.com/amit7chauhan/Jenkins.git")
+                    url(GIT_PREFIX+ "/Jenkins.git")
                                            }
                     branch("*/master")
                 }
