@@ -3,7 +3,7 @@ folder('roboshop') {
     description('Roboshop Project Folder')
 }
 
-folder('roboshop/CIJOBS') {
+folder('CIJOBS') {
     displayName('roboshop/CIJOBS')
     description('Roboshop Project CI JOBS Folder')
 }
