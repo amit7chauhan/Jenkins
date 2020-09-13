@@ -1,7 +1,7 @@
 def PROJECT_NAME = 'roboshop'
 def CIJOBS = 'CIJOBS'
 
-folder('PROJECT_NAME') {
+folder(PROJECT_NAME) {
     displayName('PROJECT_NAME')
     description(PROJECT_NAME + 'Project Folder')
 }
@@ -11,7 +11,7 @@ folder(PROJECT_NAME + '/' +CIJOBS) {
     description(PROJECT_NAME + 'Project' + CIJOBS + 'Folder')
 }
 
-pipelineJob(PROJECT_NAME+'/'+CIJOBS+"/sample") {
+pipelineJob(PROJECT_NAME +'/'+ CIJOBS + "/sample") {
     description('sample')
     definition {
         cpsScm {
