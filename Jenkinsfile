@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-                URL = "google.com"
+                URL1 = "google.com"
             }
     stages {
 
@@ -13,7 +13,7 @@ pipeline {
                     echo Bye from First Stage
                      '''
                 print "Hello from groovy"
-                print "URL = " + URL
+                print "URL = " + URL1
         }
     }
     }
