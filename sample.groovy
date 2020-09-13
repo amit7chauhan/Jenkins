@@ -1,4 +1,14 @@
-pipelineJob("sample") {
+folder('roboshop') {
+    displayName('roboshop')
+    description('Roboshop Project Folder')
+}
+
+folder('roboshop/CIJOBS') {
+    displayName('roboshop/CIJOBS')
+    description('Roboshop Project CI JOBS Folder')
+}
+
+pipelineJob("roboshop/CIJOBs/sample") {
     description('sample')
     definition {
         cpsScm {
