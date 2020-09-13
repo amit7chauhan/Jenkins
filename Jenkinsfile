@@ -3,7 +3,7 @@ pipeline {
     stages {
 
     stage('My First Stage'){
-        Steps {
+        steps {
             sh '''
             echo Hello from First Stage
             ls
