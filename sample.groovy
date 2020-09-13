@@ -2,7 +2,7 @@ def PROJECT_NAME = 'roboshop'
 def CIJOBS = 'CIJOBS'
 
 folder(PROJECT_NAME) {
-    displayName('PROJECT_NAME')
+    displayName(PROJECT_NAME)
     description(PROJECT_NAME + 'Project Folder')
 }
 
