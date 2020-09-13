@@ -4,7 +4,8 @@ pipeline {
                 URL1 = "google.com"
             }
     stages {
-
+        environment {
+                URL2 = "yahoo.com"
          stage('My First Stage'){
              steps {
                 sh '''
@@ -13,7 +14,7 @@ pipeline {
                     echo Bye from First Stage
                      '''
                 print "Hello from groovy"
-                print "URL = " + URL1
+                print "URL = " + URL1 +URL2
         }
     }
     }
