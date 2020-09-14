@@ -4,6 +4,7 @@ pipeline {
     environment {
                 URL1 = "google.com"
             }
+
     parameters {
             string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
 
@@ -34,7 +35,7 @@ pipeline {
          }
 
          stage('My Second Stage') {
-            step {
+            steps {
                 print 'Second Stage'
                 print 'Person Name - ' + PERSON
             }
