@@ -1,5 +1,6 @@
 pipeline {
     agent any
+
     environment {
                 URL1 = "google.com"
             }
@@ -13,14 +14,14 @@ pipeline {
             choice(name: 'CHOICE', choices: ['One', 'Two', 'Three'], description: 'Pick something')
 
             password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
-        }
+    }
 
     stages {
 
          stage('My First Stage'){
             environment {
-                            URL2 = "yahoo.com"
-                         }
+                  URL2 = "yahoo.com"
+            }
              steps {
                 sh '''
                  echo Hello from First Stage
@@ -30,9 +31,9 @@ pipeline {
                 print "Hello from groovy"
                 print "URL = " + URL1 +URL2
              }
-            }
+         }
 
-           stage('My Second Stage') {
+         stage('My Second Stage') {
             step {
                 print 'Second Stage'
                 print 'Person Name - ' + PERSON
@@ -40,4 +41,5 @@ pipeline {
 
          }
     }
+}
 
