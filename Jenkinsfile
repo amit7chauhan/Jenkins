@@ -14,24 +14,9 @@ pipeline {
 
             password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
         }
-        stages {
-            stage('Example') {
-                steps {
-                    echo "Hello ${params.PERSON}"
-
-                    echo "Biography: ${params.BIOGRAPHY}"
-
-                    echo "Toggle: ${params.TOGGLE}"
-
-                    echo "Choice: ${params.CHOICE}"
-
-                    echo "Password: ${params.PASSWORD}"
-                }
-            }
-        }
-    }
 
     stages {
+
          stage('My First Stage'){
             environment {
                             URL2 = "yahoo.com"
@@ -46,7 +31,13 @@ pipeline {
                 print "URL = " + URL1 +URL2
              }
             }
-          }
+
+           stage('My Second Stage') {
+            step {
+                print 'Second Stage'
+                print 'Person Name - ' + PERSON
+            }
+
          }
     }
-}
+
